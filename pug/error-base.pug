@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset='utf-8')
+    meta(name="viewport" content="width=device-width")
+    title
+      block title
+    link(type='image/x-icon' rel='icon' href='/favicon.ico')
+    style
+      include ../css/main.css
+      block styles
+  body
+    .graphic
+      block graphic
+    .message
+      header.page-header
+        h1.error-name
+          block errorTitle
+        p.subheading
+          block errorSubtitle
+      p.explanation
+        block errorExplanation

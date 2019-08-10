@@ -1,0 +1,21 @@
+extends error-base.pug
+
+block title
+  | Error 503 - Service Unavailable
+block styles
+  include ../css/emoji-disappointed-face.css
+
+block graphic
+  - var altText = 'Disappointed Face Emoji'
+  .inline-img.emoji-disappointed-face(role='img' aria-role='image' alt=altText)
+    | #{altText}
+
+block errorTitle
+  | Error 503 - Service Unavailable
+
+block errorSubtitle
+  | The site is down
+
+block errorExplanation
+  | We had to take the site offline for a bit. It's being worked on and will
+  | return as soon as possible.

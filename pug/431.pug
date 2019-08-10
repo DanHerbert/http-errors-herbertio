@@ -1,0 +1,21 @@
+extends error-base.pug
+
+block title
+  | Error 431 - Request Header Fields Too Large
+block styles
+  include ../css/emoji-thinking-face.css
+
+block graphic
+  - var altText = 'Astonished Face Emoji'
+  .inline-img.emoji-astonished-face(role='img' aria-role='image' alt=altText)
+    | #{altText}
+
+block errorTitle
+  | Error 431 - Request Header Fields Too Large
+
+block errorSubtitle
+  | Even web servers have limits.
+
+block errorExplanation
+  | It's good to know yours, too. Try something a little smaller.
+  

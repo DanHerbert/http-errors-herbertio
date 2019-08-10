@@ -1,0 +1,21 @@
+extends error-base.pug
+
+block title
+  | It works!
+block styles
+  include ../css/emoji-grinning-face.css
+
+block graphic
+  - var altText = 'Grinning Face Emoji'
+  .inline-img.emoji-grinning-face(role='img' aria-role='image' alt=altText)
+    | #{altText}
+
+block errorTitle
+  | It works!
+
+block errorSubtitle
+  | You win
+
+block errorExplanation
+  | The thing you were trying to set up is working now. Yay!
+  

@@ -1,0 +1,21 @@
+extends error-base.pug
+
+block title
+  | Error 408 - Request Timeout
+block styles
+  include ../css/emoji-unamused-face.css
+
+block graphic
+  - var altText = 'Unamused Face Emoji'
+  .inline-img.emoji-unamused-face(role='img' aria-role='image' alt=altText)
+    | #{altText}
+
+block errorTitle
+  | Error 408 - Request Timeout
+
+block errorSubtitle
+  | Hurry up
+
+block errorExplanation
+  | You were connected to the server for too long and we had to let you go. It's
+  | not personal. Just try again and hopefully things will go faster next time.

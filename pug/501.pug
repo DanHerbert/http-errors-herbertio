@@ -1,0 +1,22 @@
+extends error-base.pug
+
+block title
+  | Error 501 - Method Not Implemented
+block styles
+  include ../css/emoji-disappointed-face.css
+
+block graphic
+  - var altText = 'Disappointed Face Emoji'
+  .inline-img.emoji-disappointed-face(role='img' aria-role='image' alt=altText)
+    | #{altText}
+
+block errorTitle
+  | Error 501 - Method Not Implemented
+
+block errorSubtitle
+  | Something went wrong
+
+block errorExplanation
+  | The HTTP method you used to request the resource... blah blah blah. The
+  | bottom line is something went wrong, and it's (probably) not your fault.
+  

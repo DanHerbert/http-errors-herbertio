@@ -1,0 +1,21 @@
+extends error-base.pug
+
+block title
+  | Error 505 - HTTP Version Not Supported
+block styles
+  include ../css/emoji-disappointed-face.css
+
+block graphic
+  - var altText = 'Disappointed Face Emoji'
+  .inline-img.emoji-disappointed-face(role='img' aria-role='image' alt=altText)
+    | #{altText}
+
+block errorTitle
+  | Error 505 - HTTP Version Not Supported
+
+block errorSubtitle
+  | Something went wrong
+
+block errorExplanation
+  | It might be your fault, or ours. You're either from the future, or from the
+  | 1990's. Are you a time traveler? That must be really cool.

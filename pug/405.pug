@@ -1,0 +1,21 @@
+extends error-base.pug
+
+block title
+  | Error 405 - Method Not Allowed
+block styles
+  include ../css/emoji-face-with-open-mouth-vomiting.css
+
+block graphic
+  - var altText = 'Face With Open Mouth Vomiting Emoji'
+  .inline-img.emoji-face-with-open-mouth-vomiting(role='img' aria-role='image' alt=altText)
+    | #{altText}
+
+block errorTitle
+  | Error 405 - Method Not Allowed
+
+block errorSubtitle
+  | Umm... That was gross
+
+block errorExplanation
+  | Here on this server, there are some things that it's just not OK to do. You
+  | just tried one of them. Please stick to reasonable HTTP methods.

@@ -1,0 +1,23 @@
+extends error-base.pug
+
+block title
+  | Error 400 - Bad Request
+block styles
+  include ../css/emoji-confused-face.css
+
+block graphic
+  - var altText = 'Confused Face Emoji'
+  .inline-img.emoji-confused-face(role='img' aria-role='image' alt=altText)
+    | #{altText}
+
+block errorTitle
+  | Error 400 - Bad Request
+
+block errorSubtitle
+  | How did you manage that?
+
+block errorExplanation
+  | You tried reaching a page in a weird way. The web has rules, and if you
+  | can't follow them, I can't give you a real web page. Check the URL and try
+  | again. And seriously, I'm impressed.
+  

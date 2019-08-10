@@ -1,0 +1,21 @@
+extends error-base.pug
+
+block title
+  | Error 500 - Internal Server Error
+block styles
+  include ../css/emoji-disappointed-face.css
+
+block graphic
+  - var altText = 'Disappointed Face Emoji'
+  .inline-img.emoji-disappointed-face(role='img' aria-role='image' alt=altText)
+    | #{altText}
+
+block errorTitle
+  | Error 500 - Internal Server Error
+
+block errorSubtitle
+  | Something went wrong
+
+block errorExplanation
+  | It wasn't your fault. We messed up. Rest assured, a well trained team of
+  | flying monkeys are investigating the problem.

@@ -1,0 +1,21 @@
+extends error-base.pug
+
+block title
+  | Error 418 - I'm a Teapot
+block styles
+  include ../css/teapot.css
+
+block graphic
+  - var altText = 'Computer-generated Teapot'
+  .inline-img.graphic-teapot(role='img' aria-role='image' alt=altText)
+    | #{altText}
+
+block errorTitle
+  | Error 418 - I'm a Teapot
+
+block errorSubtitle
+  | I hate coffee
+
+block errorExplanation
+  | I can't show you this page, because I'm a teapot and do not serve coffee.
+  

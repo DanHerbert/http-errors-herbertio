@@ -1,0 +1,22 @@
+extends error-base.pug
+
+block title
+  | Error 410 - Gone
+block styles
+  include ../css/emoji-person-shrugging.css
+
+block graphic
+  - var altText = 'Person Shrugging Emoji'
+  .inline-img.emoji-person-shrugging(role='img' aria-role='image' alt=altText)
+    | #{altText}
+
+block errorTitle
+  | Error 410 - Page Gone
+
+block errorSubtitle
+  | This has been deleted from the internet
+
+block errorExplanation
+  | This page used to exist, but now it's gone and it's never coming back.
+  | Sorry.
+  

@@ -1,0 +1,20 @@
+extends error-base.pug
+
+block title
+  | Error 429 - Too Many Requests
+block styles
+  include ../css/emoji-thinking-face.css
+
+block graphic
+  - var altText = 'Astonished Face Emoji'
+  .inline-img.emoji-astonished-face(role='img' aria-role='image' alt=altText)
+    | #{altText}
+
+block errorTitle
+  | Error 429 - Too Many Requests
+
+block errorSubtitle
+  | Slow down tiger
+
+block errorExplanation
+  | You just made a lot of requests really quickly. Slow down a bit.

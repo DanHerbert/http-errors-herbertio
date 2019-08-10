@@ -1,0 +1,22 @@
+extends error-base.pug
+
+block title
+  | Error 404 - Not Found
+block styles
+  include ../css/emoji-thinking-face.css
+
+block graphic
+  - var altText = 'Thinking Face Emoji'
+  .inline-img.emoji-thinking-face(role='img' aria-role='image' alt=altText)
+    | #{altText}
+
+block errorTitle
+  | Error 404 - Page Not Found
+
+block errorSubtitle
+  | You broke the internet
+
+block errorExplanation
+  | ...Or the page you tried to reach doesn't exist. It probably just doesn't
+  | exist, but you never really know for sure...
+  

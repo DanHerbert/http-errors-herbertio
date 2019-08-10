@@ -1,0 +1,22 @@
+extends error-base.pug
+
+block title
+  | Error 401 - Not Authorized
+block styles
+  include ../css/emoji-raised-hand.css
+
+block graphic
+  - var altText = 'Raised Hand Emoji'
+  .inline-img.emoji-raised-hand(role='img' aria-role='image' alt=altText)
+    | #{altText}
+
+block errorTitle
+  | Error 401 - Not Authorized
+
+block errorSubtitle
+  | You (probably) shouldn't be here.
+
+block errorExplanation
+  | This is a sooper sekrit page that requires special authorization. Contact
+  | the administrator to gain access.
+  

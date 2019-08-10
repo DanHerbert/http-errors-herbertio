@@ -1,0 +1,21 @@
+extends error-base.pug
+
+block title
+  | Error 504 - Gateway Timeout
+block styles
+  include ../css/emoji-disappointed-face.css
+
+block graphic
+  - var altText = 'Disappointed Face Emoji'
+  .inline-img.emoji-disappointed-face(role='img' aria-role='image' alt=altText)
+    | #{altText}
+
+block errorTitle
+  | Error 504 - Gateway Timeout
+
+block errorSubtitle
+  | Something was too slow
+
+block errorExplanation
+  | It wasn't your fault. Something on our side was too slow so we had to show
+  | you this error.

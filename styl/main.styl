@@ -1,0 +1,39 @@
+body
+  display flex
+  max-width 550px
+  margin 130px auto 0
+  padding 0 25px
+
+h1
+  font-family serif
+  font-size 2rem
+  margin 0 0 .25rem
+
+p
+  font-family sans-serif
+
+.graphic
+  margin-right 20px
+
+.inline-img
+  background-size contain
+  height 128px
+  width 128px
+  font-size 0
+
+.subheading
+  font-size 1.3rem
+  margin 0 0 .5rem
+
+@media screen and (max-width: 550px)
+  body
+    padding 0 15px
+    margin-top 30px
+
+  .graphic
+    display none
+
+@media (prefers-color-scheme: dark)
+  body
+    background: hsl(0, 0, 12%)
+    color: hsl(0, 0, 100%)
