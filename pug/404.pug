@@ -7,16 +7,23 @@ block styles
 
 block graphic
   - var altText = 'Thinking Face Emoji'
-  .inline-img.emoji-thinking-face(role='img' aria-role='image' alt=altText)
+  .inline-img.emoji-thinking-face(role='img' alt=altText)
     | #{altText}
 
 block errorTitle
   | Error 404 - Page Not Found
 
 block errorSubtitle
-  | You broke the internet
+  | Where did the page go?
 
 block errorExplanation
-  | ...Or the page you tried to reach doesn't exist. It probably just doesn't
-  | exist, but you never really know for sure...
-  
+  p Maybe the address was incorrect, or has a typo.
+  p Or you were given a bad link.
+  p Or maybe the page was removed. (mistakenly or intentionally)
+  p I do review logs of broken links to fix them over time, but if you need it
+    |  urgently you can see ways to reach me at
+    |
+    a(href='https://dan.herbert.io') dan.herbert.io
+    | .
+  p This site is actively maintained and I try to be very responsive if there is
+    |  a problem.
