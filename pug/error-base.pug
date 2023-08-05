@@ -10,7 +10,7 @@ html(lang="en")
       include ../css/main.css
       block styles
   body
-    .graphic
+    .graphic(role='presentation')
       block graphic
     .message
       header.page-header
@@ -18,5 +18,5 @@ html(lang="en")
           block errorTitle
         p.subheading
           block errorSubtitle
-      p.explanation
+      div.explanation
         block errorExplanation
