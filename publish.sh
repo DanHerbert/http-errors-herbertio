@@ -25,5 +25,6 @@ else
     $pug_cmd
 fi
 
+sed -i -- 's/<h1/\n&/;s/<p/\n&/' ./html/*.html
 # Rename a class for index so it makes more semantic sense.
 sed -i -- 's/error-name/page-name/g' ./html/index.html
